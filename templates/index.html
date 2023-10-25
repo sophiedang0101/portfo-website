@@ -1,0 +1,185 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Software Engineer Portfolio</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="./static/assets/css/main.css" />
+		<link rel="shortcut icon" href="{{url_for('static', filename='comp.ico')}}">
+		<noscript><link rel="stylesheet" href="./static/assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper" class="fade-in">
+
+				<!-- Intro -->
+					<div id="intro">
+						<h1>Sophie Dang <br>
+							Software Engineer Portfolio<br />
+						</h1>
+						<p> Former Procurement Expert | CS Graduate | Software Engineer | Avid Learner | Python, SQL, MySQL, Java, JavaFX, HTML, CSS</p>
+						<ul class="actions">
+							<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
+						</ul>
+					</div>
+
+				<!-- Header -->
+					<header id="header">
+<!--						<a href="index.html" class="logo">Software Engineer Portfolio</a>-->
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li class="active"><a href="index.html">Projects</a></li>
+							<li class="active"><a href="experience.html">Professional Experience</a></li>
+							<li class="active"><a href="about.html">About Me</a></li>
+						</ul>
+						<ul class="icons">
+							<li><a href="https://www.linkedin.com/in/sophiedangdev/" class="icon brands alt fa-linkedin"><span
+								class="label">LinkedIn</span></a></li>
+							<li><a href="https://github.com/sophiedang0101" class="icon brands alt fa-github"><span
+								class="label">GitHub</span></a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+						<article>
+							<header>
+								<h2 style="text-indent: 6em;"><a href="https://github.com/sophiedang0101/WGU-Capstone-Project">Support Vector Machine(SVM) Spam Filter<br />
+								</a></h2>
+							</header>
+							<a><img src="./static/images/sign.jpg" alt="spam" width="400" height="400" style="display: block; margin: 0 auto;" /></a>
+
+							<p>A spam filter using the Support Vector Machine (SVM) algorithm to distinguish legitimate from
+							illegitimate emails. The model achieved approximately 98% accuracy, 100% precision, 84% recall, and
+							92% F1 score, signifying a high precision in classifying illegitimate and legitimate messages.
+							Additionally, advanced visualization tools such as "wordcloud", "matplotlib", and "seaborn" were
+							used to provide insights into the model's performance and guide necessary adjustments.
+
+							The project received the Capstone Excellence Award from Western Governors University.</p>
+							<ul class="actions special">
+								<li><a href="https://github.com/sophiedang0101/WGU-Capstone-Project" class="button">View Project</a></li>
+<!--								<li><a href="#" class="button">Watch Video</a></li>-->
+							</ul>
+						</article>
+
+						<!-- Posts -->
+							<section class="posts">
+								<article>
+									<header>
+										<h2><a href="https://github.com/sophiedang0101/WGU-C195-Java-Software-II">Appointment Scheduling Application<br />
+										</a></h2>
+									</header>
+									<a class="image fit"><img src="./static/images/booking.jpg" alt="Login" /></a>
+									<p>A full stack appointment scheduler with proper error checking and the ability to work with any time zone.
+										The application is used to create and manage appointments with an end-user, internal contacts within a company, and external customers.</p>
+									<ul class="actions special">
+										<li><a href="https://github.com/sophiedang0101/WGU-C195-Java-Software-II" class="button">View Project</a></li>
+<!--										<li><a href="#" class="button">Watch Video</a></li>-->
+									</ul>
+								</article>
+								<article>
+									<header>
+										<h2><a href="https://github.com/sophiedang0101/WGU-C950-Package-Delivery-Program">WGUPS Package Delivery Program<br />
+										</a></h2>
+									</header>
+									<a  class="image fit"><img src="./static/images/mail.jpg" alt="" /></a>
+									<p> Python program with a CLI interface simulates an efficient mail truck delivery route
+										between three trucks and two drivers. It uses the Nearest Neighbor algorithm to calculate and
+										establish an optimized route.</p>
+									<ul class="actions special">
+										<li><a href="https://github.com/sophiedang0101/WGU-C950-Package-Delivery-Program" class="button">View Project</a></li>
+<!--										<li><a href="#" class="button">Watch Video</a></li>-->
+									</ul>
+								</article>
+<!--								<article>-->
+<!--									<header>-->
+<!--										<h2><a href="#">Sudoku Solver: WIP<br />-->
+<!--										</a></h2>-->
+<!--									</header>-->
+<!--									<a href="#" class="image fit"><img src="images/pic04.jpg" alt="" /></a>-->
+<!--									<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis magna etiam.</p>-->
+<!--									<ul class="actions special">-->
+<!--										<li><a href="#" class="button">Full Story</a></li>-->
+<!--									</ul>-->
+<!--								</article>-->
+							</section>
+
+
+				<!-- Footer -->
+					<footer id="footer">
+						<section>
+							<form action="submit_form" method="post" class="reveal-content">
+								<div class="fields">
+									<div class="field">
+										<label for="name">Name</label>
+										<input type="text" name="name" id="name" />
+									</div>
+									<div class="field">
+										<label for="email">Email</label>
+										<input type="text" name="email" id="email" />
+									</div>
+									<div class="field">
+										<label for="message">Message</label>
+										<textarea name="message" id="message" rows="3"></textarea>
+									</div>
+								</div>
+								<ul class="actions">
+									<li><input type="submit" value="Send Message" /></li>
+								</ul>
+							</form>
+							<!-- JavaScript to clear form inputs after submission -->
+								<script>
+									function clearFormInputs() {
+										const form = document.querySelector('form');
+										form.reset();
+									}
+								</script>
+						</section>
+						<section class="split contact">
+							<section class="alt">
+								<h3>Location</h3>
+								<p>Tacoma, Washington<br />
+								</p>
+							</section>
+							<section>
+								<h3>Email</h3>
+								<p>sophiedang0011@gmail.com</p>
+							</section>
+							<section>
+								<h3>Social</h3>
+								<ul class="icons alt">
+									<li><a href="https://www.linkedin.com/in/sophiedangdev/" class="icon brands alt fa-linkedin"><span
+										class="label">LinkedIn</span></a></li>
+									<li><a href="https://github.com/sophiedang0101" class="icon brands alt fa-github"><span
+										class="label">GitHub</span></a></li>
+								</ul>
+							</section>
+						</section>
+					</footer>
+
+			<!-- Copyright -->
+				<div id="copyright">
+					<ul><li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+				</div>
+		</div>
+
+		<!-- Scripts -->
+			<script src="./static/assets/js/jquery.min.js"></script>
+			<script src="./static/assets/js/jquery.scrollex.min.js"></script>
+			<script src="./static/assets/js/jquery.scrolly.min.js"></script>
+			<script src="./static/assets/js/browser.min.js"></script>
+			<script src="./static/assets/js/breakpoints.min.js"></script>
+			<script src="./static/assets/js/util.js"></script>
+			<script src="./static/assets/js/main.js"></script>
+			</div>
+	</body>
+</html>
